@@ -1,7 +1,7 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Julia Talashova](https://up.htmlacademy.ru/adaptive/6/user/47843).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Кравченко`.
 
 ---
 
