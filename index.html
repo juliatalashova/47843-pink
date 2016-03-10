@@ -7,20 +7,22 @@
   <body>
     <header class="page-header">
       <div class="page-header__top">
-        <div class="logo">
-          <a href="#">
-            <img src="http://placehold.it/150x100" width="#" height="#" alt="Pink">
-          </a>
+        <div class="container">
+          <div class="logo">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="#" height="#" alt="Pink">
+            </a>
+          </div>
+          <a class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</a>
+          <nav class="main-nav  main-nav--opened">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
+            </ul>
+          </nav>
         </div>
-        <a class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</a>
-        <nav class="main-nav  main-nav--opened">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
-          </ul>
-        </nav>
       </div>
       <div class="promo-slogan  promo-slogan--bg">
         <div class="promo-slogan__wrapper">
@@ -28,8 +30,8 @@
         </div>
       </div>
       <div class="download-app">
+        <a class="download-app__btn  btn" href="#">Скачать приложение</a>
         <div class="download-app__wrapper">
-          <a class="download-app__btn  btn" href="#">Скачать приложение</a>
           <a class="download-app__link  download-app__link--android" href="#"></a>
           <a class="download-app__link  download-app__link--apple" href="#"></a>
           <a class="download-app__link  download-app__link--windows" href="#"></a>
@@ -64,16 +66,12 @@
       </section>
 
       <section class="reviews">
+        <!--feedback slider-->
+        <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
+        <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-2">
+        <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-3">
+
         <div class="reviews__wrapper">
-          <!--feedback slider-->
-          <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
-          <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-2">
-          <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-3">
-          <div class="reviews__controls">
-            <label class="slider-nav__toggle" for="reviews-radio-1">1</label>
-            <label class="slider-nav__toggle" for="reviews-radio-2">2</label>
-            <label class="slider-nav__toggle" for="reviews-radio-3">3</label>
-          </div>
           <div class="reviews-items">
             <blockquote class="reviews-item  reviews-item--active">
               <cite class="reviews-item__author">Николай Петров</cite>
@@ -90,6 +88,11 @@
               <p class="reviews-item__text">«Захотелось встать с дивана и запостить несколько фото»</p>
             </blockquote>
           </div>
+          <div class="reviews__controls">
+            <label class="slider-nav__toggle" for="reviews-radio-1">1</label>
+            <label class="slider-nav__toggle" for="reviews-radio-2">2</label>
+            <label class="slider-nav__toggle" for="reviews-radio-3">3</label>
+          </div>
         </div>
       </section>
 
@@ -105,7 +108,7 @@
             <label class="slider-nav__btn" for="price-radio-3">3</label>
           </div>
 
-          <ul class="price__premium">
+          <ul class="price__list">
             <li class="price__item">
               <b class="price__item-name"> Премиум</b>
               <p class="price__item-amount">9,99 USD</p>
@@ -115,7 +118,7 @@
             <li class="price__item">Просмотр лайков</li>
           </ul>
 
-          <ul class="price__standard">
+          <ul class="price__list">
             <li class="price__item  price__item--active">
               <b class="price__item-name">Стандарт</b>
               <p class="price__item-amount">3,99 USD</p>
@@ -125,7 +128,7 @@
             <li class="price__item">Комментарии</li>
           </ul>
 
-          <ul class="price__gold">
+          <ul class="price__list">
             <li class="price__item">
               <b class="price__item-name">Премиум</b>
               <p class="price__item-amount">20,99 USD</p>
