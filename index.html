@@ -1,12 +1,167 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <meta charset="UTF-8">
+    <title>Index</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__top">
+        <div class="container">
+          <div class="logo">
+            <a href="#">
+              <img src="http://placehold.it/150x100" width="#" height="#" alt="Pink">
+            </a>
+          </div>
+          <a class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</a>
+          <nav class="main-nav  main-nav--opened">
+            <ul class="main-nav__list">
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Информация</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Возможности</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Отзывы</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="#">Стоимость</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="promo-slogan  promo-slogan--bg">
+        <div class="promo-slogan__wrapper">
+          <h1 class="promo-slogan__title">Взгляните на жизнь иначе!</h1>
+        </div>
+      </div>
+      <div class="download-app">
+        <a class="download-app__btn  btn" href="#">Скачать приложение</a>
+        <div class="download-app__wrapper">
+          <a class="download-app__link  download-app__link--android" href="#"></a>
+          <a class="download-app__link  download-app__link--apple" href="#"></a>
+          <a class="download-app__link  download-app__link--windows" href="#"></a>
+        </div>
+        <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </header>
+    <main class="main">
+      <p class="promo-stats__text">Устали от серости мегаполиса?</p>
+      <p class="promo-stats__text">Нам есть, что вам предложить!</p>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+      <section class="advantages">
+        <div class="advantages__wrapper">
+          <div class="advantages__item">
+            <b class="advantages__item-title">Поднимает настроение</b>
+            <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
 
+          <div class="advantages__item">
+            <b class="advantages__item-title">Меняет мир вокруг</b>
+            <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+
+          <div class="advantages__item">
+            <b class="advantages__item-title">Заводит новых друзей</b>
+            <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями и заводите новых</p>
+          </div>
+        </div>
+        <div class="advantages-picture">
+          <img src="http://placehold.it/150x100" width="#" height="#" alt="Phone with hello, everybody picture">
+        </div>
+      </section>
+
+      <section class="reviews">
+        <!--feedback slider-->
+        <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
+        <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-2">
+        <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-3">
+
+        <div class="reviews__wrapper">
+          <div class="reviews-items">
+            <blockquote class="reviews-item  reviews-item--active">
+              <cite class="reviews-item__author">Николай Петров</cite>
+              <p class="reviews-item__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к вложенной фотографии!»</p>
+            </blockquote>
+
+            <blockquote class="reviews-item  reviews-item--active">
+              <cite class="reviews-item__author">Анна Каренина</cite>
+              <p class="reviews-item__text">«С этим приложением не бывает скучно! Всегда можно посмотреть интересные фотографии людей и поднять себе настроение»</p>
+            </blockquote>
+
+            <blockquote class="reviews-item  reviews-item--active">
+              <cite class="reviews-item__author">Илья Обломов</cite>
+              <p class="reviews-item__text">«Захотелось встать с дивана и запостить несколько фото»</p>
+            </blockquote>
+          </div>
+          <div class="reviews__controls">
+            <label class="slider-nav__toggle" for="reviews-radio-1">1</label>
+            <label class="slider-nav__toggle" for="reviews-radio-2">2</label>
+            <label class="slider-nav__toggle" for="reviews-radio-3">3</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="price__wrapper">
+          <!--Price block slider-->
+          <input class="slider-nav__switcher" type="radio" name="price" id="price-radio-1">
+          <input class="slider-nav__switcher" type="radio" name="price" id="price-radio-2" checked>
+          <input class="slider-nav__switcher" type="radio" name="price" id="price-radio-3">
+          <div class="price__controls">
+            <label class="slider-nav__btn" for="price-radio-1">1</label>
+            <label class="slider-nav__btn" for="price-radio-2">2</label>
+            <label class="slider-nav__btn" for="price-radio-3">3</label>
+          </div>
+
+          <ul class="price__list">
+            <li class="price__item">
+              <b class="price__item-name"> Премиум</b>
+              <p class="price__item-amount">9,99 USD</p>
+            </li>
+            <li class="price__item">Больше фильтров</li>
+            <li class="price__item">Репост записи</li>
+            <li class="price__item">Просмотр лайков</li>
+          </ul>
+
+          <ul class="price__list">
+            <li class="price__item  price__item--active">
+              <b class="price__item-name">Стандарт</b>
+              <p class="price__item-amount">3,99 USD</p>
+            </li>
+            <li class="price__item">Розовый фильтр</li>
+            <li class="price__item">Смайлики</li>
+            <li class="price__item">Комментарии</li>
+          </ul>
+
+          <ul class="price__list">
+            <li class="price__item">
+              <b class="price__item-name">Премиум</b>
+              <p class="price__item-amount">20,99 USD</p>
+            </li>
+            <li class="price__item">Новости</li>
+            <li class="price__item">Френдзона</li>
+            <li class="price__item">Блокирование</li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts">
+        <p class="contacts__heading">Остались вопросы?</p>
+        <p class="contacts__heading">Свяжитесь с нами!</p>
+
+         <div class="contacts__item">
+          <b class="contacts__item-title">Звоните:</b>
+          <a class="contacts__item-info" href="tel.:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+
+        <div class="contacts__item">
+          <b class="contacts__item-title">Пишите:</b>
+          <a class="contacts__item-info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+
+        <div class="contacts__item">
+          <b class="contacts__item-title">Приезжайте в гости:</b>
+          <a class="contacts__item-info" href="#">ул. Большая Конюшенная 19/8</a>
+        </div>
+
+        <div class="contacts__map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.299106812745!2d30.322155254096117!3d59.93880896131098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1457197659138"></iframe>"
+        </div>
+      </section>
+    </main>
   </body>
 </html>
