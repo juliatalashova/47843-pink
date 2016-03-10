@@ -1,0 +1,46 @@
+body {
+  background: gainsboro;
+}
+@import "blocks/normalize";
+
+@import "blocks/page-header";
+
+@import "blocks/logo";
+
+@import "blocks/main-nav";
+
+@import "blocks/main";
+
+@import "blocks/download-app";
+
+@import "blocks/advantages";
+
+@import "blocks/reviews";
+
+@import "blocks/reviews-item";
+
+@import "blocks/users-photos-item";
+
+@import "blocks/users-photos__post";
+
+@import "blocks/range-filters";
+
+@import "blocks/price";
+
+@import "blocks/price__list";
+
+@import "blocks/contacts";
+
+@import "blocks/contacts__item";
+
+@import "blocks/page-footer";
+
+@import "blocks/page-footer__social";
+
+@import "blocks/page-footer__copyright";
+
+@import "blocks/user-personal-info";
+
+@import "blocks/success-message";
+
+@import "blocks/fail-message";
