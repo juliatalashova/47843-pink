@@ -1,0 +1,14 @@
+.page-footer__copyright {
+  border: 2px solid salmon;
+
+}
+@media #{$tablet-width} {
+  .page-footer__copyright {
+    float: right;
+  }
+}
+/*@media #{$desktop-width} {
+  .page-footer__copyright {
+    float: right;
+  }
+}*/

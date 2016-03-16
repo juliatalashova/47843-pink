@@ -1,3 +1,5 @@
 .success-message {
   border: 2px solid red;
+  @include popup-width;
 }
+

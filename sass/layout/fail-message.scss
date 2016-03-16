@@ -1,3 +1,4 @@
 .fail-message {
   border: 2px solid rebeccapurple;
+  @include popup-width;
 }

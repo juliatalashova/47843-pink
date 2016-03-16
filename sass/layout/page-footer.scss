@@ -1,0 +1,29 @@
+.page-footer {
+  border: 2px solid black;
+  &__wrapper {
+    @include container;
+  }
+}
+@media #{$mobile-width-only} {
+  .page-footer {
+    display: none;
+  }
+}
+
+@media #{$tablet-width} {
+  .page-footer__wrapper {
+    @include container;
+    @include clearfix;
+  }
+  .social-links {
+    display: block;
+  }
+  .social-link {
+    display: inline-block;
+  }
+}
+
+.page-footer--visible,
+.page-footer--inner {
+  display: block;
+}

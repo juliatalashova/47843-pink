@@ -1,0 +1,80 @@
+.advantages {
+  &__item {
+    text-align: center;
+   }
+}
+.advantages-picture {
+  display: none;
+}
+.advantages-picture--shown {
+  display: block;
+}
+.advantages-picture {
+  text-align: center;
+}
+.advantages__container {
+  @include container;
+}
+.advantages--24hour {
+  display: none;
+}
+@media #{$tablet-width} {
+ .advantages {
+   &__container {
+     @include clearfix;
+   }
+   &__wrapper {
+     float: right;
+     width: 310px;
+   }
+   &-picture {
+     float: left;
+   }
+ }
+  .advantages--24hour {
+    display: block;
+    @include container;
+    background: aquamarine;
+    opacity: .8;
+
+  }
+  .advantages__item--24hour {
+    float: right;
+    width: 310px;
+  }
+  .advantages-picture--24hour {
+    float: left;
+    display: block;
+  }
+}
+@media #{$desktop-width} {
+  .advantages__container {
+    @include container;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .advantages__wrapper {
+    float: none;
+    @include container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+  .advantages__item {
+    width: 300px;
+  }
+  .advantages-picture {
+    float: none;
+    display: block;
+  }
+  .advantages-picture__wrapper {
+    @include container;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    order: -1;
+  }
+}
+

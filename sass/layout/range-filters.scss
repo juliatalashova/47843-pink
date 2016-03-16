@@ -1,0 +1,54 @@
+.range-filters {
+  border: 2px solid red;
+  @include container;
+}
+.range-filters img {
+  display: block;
+  width: 100%;
+}
+.range-filters__controls-link {
+  display: block;
+  margin: 0 auto;
+}
+.range-filters__wrapper {
+  background: aqua;
+  position: relative;
+}
+.range-filter__scale {
+  height: 2px;
+  margin-top: 38px;
+  background: #000000;
+
+}
+.range-filter__toggle {
+  position: absolute;
+  top: 296px;
+  left: 170px;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  background: #ffffff;
+}
+@media #{$tablet-width} {
+  .range-filters {
+    @include clearfix;
+  }
+  .range-filters__wrapper {
+    float: right;
+    width: 45%;
+  }
+  .range-filters img {
+    display: block;
+    width: 45%;
+    float: left;
+  }
+  .range-filter__toggle {
+    display: none;
+  }
+}
+@media #{$desktop-width} {
+  .photo-upload {
+  }
+}

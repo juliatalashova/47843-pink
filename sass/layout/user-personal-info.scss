@@ -1,0 +1,18 @@
+#user-personal-info {
+  border: 2px solid darkorange;
+  @include container;
+
+
+}
+@media #{$tablet-width} {
+  #user-personal-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+}
+@media #{$desktop-width} {
+
+}

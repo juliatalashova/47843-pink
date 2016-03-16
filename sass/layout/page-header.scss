@@ -1,0 +1,11 @@
+.page-header {
+  @include container;
+}
+.page-header__top {
+  background: red;
+  opacity: .8;
+}
+
+.container {
+  @include clearfix;
+}
