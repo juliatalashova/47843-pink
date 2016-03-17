@@ -1,0 +1,30 @@
+.users-photos-item {
+  border: 2px solid darkcyan;
+}
+.users-photos-item__full-view {
+  display: block;
+  text-align: center;
+}
+.users-photos-item img {
+  display: block;
+  width: 100%;
+}
+.users-photos-item__full-view--big {
+  width: 100%;
+}
+@media #{$tablet-width} {
+  .users-photos-item {
+    width: 45%;
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  .users-photos-item img {
+    display: block;
+    width: 100%;
+  }
+}
+@media #{$desktop-width} {
+  .users-photos-item {
+    width: 30%;
+  }
+}

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Form</title>
       <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
@@ -9,9 +10,9 @@
     <header class="page-header">
       <div class="page-header__top">
         <div class="container">
-          <div class="logo">
+          <div class="logo logo--top">
             <a href="#">
-              <img src="http://placehold.it/150x100" width="#" height="#" alt="Pink">
+              <img src="http://placehold.it/80x25" width="80" height="25" alt="Pink">
             </a>
           </div>
           <a class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</a>
@@ -24,9 +25,9 @@
             </ul>
           </nav>
         </div>
-        <div class="promo-slogan">
-          <h1 class="promo-slogan__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-        </div>
+      </div>
+      <div class="promo-slogan promo-slogan--visible">
+        <h1 class="promo-slogan__title">Конкурс на самое безбашеное путешествие с Пинк</h1>
       </div>
     </header>
     <main class="main">
@@ -34,7 +35,7 @@
       <p class="intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
 
       <form id="user-personal-info" action="#" method="post">
-        <fieldset class="form-group form-group--light">
+        <fieldset class="form-group form-group--user-info">
           <div class="form-group__wrapper">
             <label class="form-group__label" for="field-name">Имя:
               <input class="form-group__input" type="text" name="user-name" placeholder="Введите ваше имя" id="field-name">
@@ -48,7 +49,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-group  form-group--dark">
+        <fieldset class="form-group  form-group--progress-list">
           <div class="form-group__wrapper">
             <legend class="form-group__title">Ваши безбашенные достижения в путешествии</legend>
 
@@ -72,7 +73,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-group  form-group--light">
+        <fieldset class="form-group  form-group--contacts">
           <div class="form-group__wrapper">
             <label class="form-group__label" for="phone-number">Номерок телефончика
               <input class="form-group__input" type="tel" name="phone" placeholder="Номер, пожалуйста" id="phone-number">
@@ -84,7 +85,7 @@
           </div>
         </fieldset>
 
-        <fieldset class="form-group form-group--dark">
+        <fieldset class="form-group form-group--app-choice">
           <div class="form-group__wrapper">
             <legend class="form-group__title">С каким приложением путешествовали?</legend>
 
@@ -105,30 +106,28 @@
             <textarea class="user-feedback__comments" rows="10" cols="15" name="comments" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
         </fieldset>
-        <button class="btn btn--submit" type="submit">Отправить форму</button>
         <div class="explain-required-fields">
-          <div class="explain-required-fields__wrapper">
-            <small class="explain-required-fields__info"><sup>*</sup> - обязательные поля</small>
-          </div>
+          <button class="btn btn--submit" type="submit">Отправить форму</button>
+          <small class="explain-required-fields__info"><sup>*</sup> - обязательные поля</small>
         </div>
       </form>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--visible">
       <div class="page-footer__wrapper">
         <div class="logo logo--bottom">
-          <img src="http://placehold.it/150x100" width="#" height="#" alt="Pink">
+          <img src="http://placehold.it/150x50" width="150" height=50" alt="Pink">
         </div>
         <div class="page-footer__social">
           <div class="social-links">
-            <a class="social-link social-link--twit" href="#">Twitter</a>
-            <a class="social-link social-link--fb" href="#">Facebook</a>
-            <a class="social-link social-link--play" href="#">Play Market</a>
+            <a class="social-link social-link--twit" href="#">T</a>
+            <a class="social-link social-link--fb" href="#">F</a>
+            <a class="social-link social-link--play" href="#">PM</a>
           </div>
         </div>
         <div class="page-footer__copyright">
           Разработано
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru">
-            <img src="http://placehold.it/150x100" width="#" height="#" alt="HTML Academy">
+            <img src="http://placehold.it/27x35" width="27" height="35" alt="HTML Academy">
           </a>
         </div>
       </div>

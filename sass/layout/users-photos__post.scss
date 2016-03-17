@@ -1,0 +1,37 @@
+.users-photos__post {
+  border: 2px solid aquamarine;
+}
+.users-photos__post {
+  width: 100%;
+  margin: 0 auto;
+}
+.photo-upload button {
+  width: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.photo-upload button[type="submit"] {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+@media #{$tablet-width} {
+  .users-photos__post {
+    width: 100%;
+  }
+}
+@media #{$desktop-width} {
+  .photo-upload {
+    @include clearfix;
+  }
+  .photo-upload button {
+    width: 45%;
+  }
+  .photo-upload button[type="submit"] {
+    float: left;
+    margin: 0;
+  }
+  .photo-upload button[type="reset"] {
+    float: right;
+  }
+}

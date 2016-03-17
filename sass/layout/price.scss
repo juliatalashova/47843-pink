@@ -1,0 +1,40 @@
+.price {
+  border: 2px solid firebrick;
+}
+.price__wrapper {
+  @include container;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+}
+.price__wrapper input[type="radio"] {
+  display: none;
+}
+#price-radio-1:checked ~ .price__list:nth-of-type(1),
+#price-radio-2:checked ~ .price__list:nth-of-type(2),
+#price-radio-3:checked ~ .price__list:nth-of-type(3) {
+  display: block;
+}
+#price-radio-1:checked ~ .slider-nav label[for="price-radio-1"],
+#price-radio-2:checked ~ .slider-nav label[for="price-radio-2"],
+#price-radio-3:checked ~ .slider-nav label[for="price-radio-3"] {
+  background-color: #000000;
+}
+@media #{$desktop-width} {
+  .btn--hidden {
+    display: none;
+  }
+  .price__wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media #{$tablet-width} {
+  .btn--hidden {
+    display: none;
+  }
+  .price__wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }
+}

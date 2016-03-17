@@ -1,0 +1,29 @@
+@media #{$mobile-width-only} {
+  .price__list {
+    border: 2px solid goldenrod;
+    display: none;
+    order: -1;
+  }
+}
+.price__list {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+  width: auto;
+  border: 2px solid greenyellow;
+}
+@media #{$desktop-width} {
+  .price__list {
+    width: 235px;
+    display: block;
+  }
+}
+@media #{$tablet-width} {
+  .price__list {
+    width: 155px;
+  }
+  .price__item--feature {
+    display: none;
+  }
+}

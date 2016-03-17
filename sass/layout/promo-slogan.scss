@@ -1,0 +1,16 @@
+.promo-slogan__title {
+  text-align: center;
+}
+.promo-slogan--visible {
+  text-align: center;
+}
+@media #{$mobile-width-only} {
+  .promo-slogan__title {
+    display: none;
+  }
+}
+@media #{$tablet-width} {
+  .promo-slogan {
+    width: 200px;
+  }
+}

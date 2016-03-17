@@ -1,46 +1,66 @@
 body {
-  background: gainsboro;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #283645;
+  font-family: "Open Sans", Arial, sans-serif;
+  background: #fff;
 }
-@import "blocks/normalize";
 
-@import "blocks/page-header";
+@import "base/normalize";
 
-@import "blocks/logo";
+@import "utils/variables";
 
-@import "blocks/main-nav";
+@import "utils/mixin";
 
-@import "blocks/main";
+@import "layout/page-header";
 
-@import "blocks/download-app";
+@import "layout/logo";
 
-@import "blocks/advantages";
+@import "layout/main-nav";
 
-@import "blocks/reviews";
+@import "layout/promo-slogan";
 
-@import "blocks/reviews-item";
+@import "layout/main";
 
-@import "blocks/users-photos-item";
+@import "layout/promo-stats__text";
 
-@import "blocks/users-photos__post";
+@import "layout/intro-text";
 
-@import "blocks/range-filters";
+@import "layout/form-group";
 
-@import "blocks/price";
+@import "layout/download-app";
 
-@import "blocks/price__list";
+@import "layout/advantages";
 
-@import "blocks/contacts";
+@import "layout/reviews";
 
-@import "blocks/contacts__item";
+@import "layout/reviews-item";
 
-@import "blocks/page-footer";
+@import "layout/users-photos";
 
-@import "blocks/page-footer__social";
+@import "layout/users-photos-item";
 
-@import "blocks/page-footer__copyright";
+@import "layout/users-photos__post";
 
-@import "blocks/user-personal-info";
+@import "layout/range-filters";
 
-@import "blocks/success-message";
+@import "layout/price";
 
-@import "blocks/fail-message";
+@import "layout/price__list";
+
+@import "layout/contacts";
+
+@import "layout/contacts__item";
+
+@import "layout/page-footer";
+
+@import "layout/page-footer__social";
+
+@import "layout/page-footer__copyright";
+
+@import "layout/user-personal-info";
+
+@import "layout/success-message";
+
+@import "layout/fail-message";
