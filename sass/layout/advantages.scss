@@ -15,8 +15,10 @@
 .advantages__container {
   @include container;
 }
-.advantages--24hour {
-  display: none;
+@media #{$mobile-width-only} {
+  .block-24hour {
+    display: none;
+  }
 }
 @media #{$tablet-width} {
  .advantages {
@@ -30,20 +32,27 @@
    &-picture {
      float: left;
    }
+   .advantages__item {
+     text-align: left;
+   }
  }
-  .advantages--24hour {
-    display: block;
+  .block-24hour {
     @include container;
     background: aquamarine;
     opacity: .8;
-
   }
-  .advantages__item--24hour {
+  .block-24hour__wrapper {
+    @include clearfix;
+  }
+  .block-24hour__item {
     float: right;
     width: 310px;
   }
-  .advantages-picture--24hour {
+  .block-24hour__picture {
     float: left;
+
+  }
+  .block-24hour__picture img {
     display: block;
   }
 }

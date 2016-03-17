@@ -1,1 +1,16 @@
-
+@media #{$tablet-width} {
+  .reviews-item__text {
+    display: none;
+  }
+}
+//сделала флекс, но теперь все слайды показываются на десктопе, а не 1. почему?
+@media #{$desktop-width} {
+  .reviews-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews-item__text {
+    order: -1;
+    display: block;
+  }
+}

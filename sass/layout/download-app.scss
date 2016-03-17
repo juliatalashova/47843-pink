@@ -1,37 +1,39 @@
 .download-app {
   border: 2px solid navajowhite;
-  @include container;
-  &__btn {
-    display: block;
-    width: 100%;
-    text-align: center;
-    border: 1px solid black;
-    border-radius: 10px;
-  }
-  &__wrapper {
-    width: 230px;
-    margin: 0 auto;
-    @include clearfix;
-  }
-  &__link {
-    display: block;
-    &--android {
-      float: left;
-    }
-    &--apple {
-      float: left;
-    }
-    &--windows {
-      float: right;
-    }
-  }
-  &__description {
-    text-align: center;
-  }
 }
+
+.download-app__btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.download-app__wrapper {
+  @include clearfix;
+  width: 210px;
+
+}
+.download-app__link {
+  display: block;
+  width: 33.3%;
+  text-align: center;
+}
+.download-app__link--android {
+  float: left;
+}
+.download-app__link--apple {
+  float: left;
+}
+.download-app__link--windows {
+  float: right;
+}
+.download-app__description {
+  text-align: center;
+}
+
 @media #{$tablet-width} {
   .download-app {
-    float: left;
-    max-width: 320px;
+    width: 300px;
   }
 }

@@ -5,6 +5,7 @@
   @include container;
   display: flex;
   flex-direction: column;
+  border: 2px solid grey;
 }
 .price__wrapper input[type="radio"] {
   display: none;

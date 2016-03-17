@@ -1,7 +1,9 @@
-.price__list {
-  border: 2px solid goldenrod;
-  display: none;
-  order: -1;
+@media #{$mobile-width-only} {
+  .price__list {
+    border: 2px solid goldenrod;
+    display: none;
+    order: -1;
+  }
 }
 .price__list {
   padding: 0;
@@ -9,6 +11,7 @@
   text-align: center;
   list-style: none;
   width: auto;
+  border: 2px solid greenyellow;
 }
 @media #{$desktop-width} {
   .price__list {
@@ -18,7 +21,9 @@
 }
 @media #{$tablet-width} {
   .price__list {
-    width: 150px;
-    display: block;
+    width: 155px;
+  }
+  .price__item--feature {
+    display: none;
   }
 }

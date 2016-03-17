@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Index</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
   </head>
@@ -28,16 +29,16 @@
       <div class="promo-slogan  promo-slogan--bg">
         <div class="promo-slogan__wrapper">
           <h1 class="promo-slogan__title">Взгляните на жизнь иначе!</h1>
+          <div class="download-app">
+            <a class="download-app__btn  btn" href="#">Скачать приложение</a>
+            <div class="download-app__wrapper">
+              <a class="download-app__link  download-app__link--apple" href="#">apple</a>
+              <a class="download-app__link  download-app__link--android" href="#">andr</a>
+              <a class="download-app__link  download-app__link--windows" href="#">win</a>
+            </div>
+            <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
-      </div>
-      <div class="download-app">
-        <a class="download-app__btn  btn" href="#">Скачать приложение</a>
-        <div class="download-app__wrapper">
-          <a class="download-app__link  download-app__link--apple" href="#">apple</a>
-          <a class="download-app__link  download-app__link--android" href="#">andr</a>
-          <a class="download-app__link  download-app__link--windows" href="#">win</a>
-        </div>
-        <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </header>
     <main class="main">
@@ -74,19 +75,20 @@
             </div>
           </div>
         </div>
-        <div class="advantages--24hour">
-          <div class="advantages__item  advantages__item--24hour">
-            <b class="advantages__item-title">Эффект на 24 часа</b>
-            <p class="advantages__item-description">Британские ученые провели исследования и доказали,
+      </section>
+      <div class="block-24hour">
+        <div class="block-24hour__wrapper">
+          <div class="block-24hour__item">
+            <b class="block-24hour__item-title">Эффект на 24 часа</b>
+            <p class="block-24hour__item-description">Британские ученые провели исследования и доказали,
               что положительный эффект от использования приложения длится целые сутки!</p>
-            <a href="#" class="advantages__item__link">Узнать больше об исследовании</a>
+            <a href="#" class="block-24hour__item__link">Узнать больше об исследовании</a>
           </div>
-          <div class="advantages-picture  advantages-picture--24hour">
-            <img src="http://placehold.it/300x350" width="300" height="350" alt="alarm-clock">
+          <div class="block-24hour__picture">
+            <img src="http://placehold.it/240x285" width="240" height="285" alt="alarm-clock">
           </div>
         </div>
-      </section>
-
+      </div>
       <section class="reviews">
         <div class="reviews__wrapper">
           <div class="reviews-items">
@@ -103,11 +105,13 @@
 
             <blockquote class="reviews-item">
               <cite class="reviews-item__author">Анна Каренина</cite>
+              <p class="reviews-item__author-info">28 лет, замужняя дама</p>
               <p class="reviews-item__text">«С этим приложением не бывает скучно! Всегда можно посмотреть интересные фотографии людей и поднять себе настроение»</p>
             </blockquote>
 
             <blockquote class="reviews-item">
               <cite class="reviews-item__author">Илья Обломов</cite>
+              <p class="reviews-item__author-info">32 года, лежебока</p>
               <p class="reviews-item__text">«Захотелось встать с дивана и запостить несколько фото»</p>
             </blockquote>
 
@@ -137,32 +141,42 @@
 
           <ul class="price__list">
             <li class="price__item">
+              <b class="price__item-name"></b>
+              <p class="price__item-amount"></p>
+            </li>
+            <li class="price__item">Розовый фильтр</li>
+            <li class="price__item">Смайлики</li>
+            <li class="price__item">Комментарии</li>
+          </ul>
+
+          <ul class="price__list">
+            <li class="price__item price__item--shown">
               <b class="price__item-name">База</b>
               <p class="price__item-amount">1,99 USD</p>
             </li>
-            <li class="price__item">Розовый фильтр</li>
-            <li class="price__item">Смайлики</li>
-            <li class="price__item">Комментарии</li>
+            <li class="price__item  price__item--feature">Розовый фильтр</li>
+            <li class="price__item  price__item--feature">Смайлики</li>
+            <li class="price__item  price__item--feature">Комментарии</li>
           </ul>
 
           <ul class="price__list">
-            <li class="price__item  price__item--active">
+            <li class="price__item  price__item--active price__item--shown">
               <b class="price__item-name">Стандарт</b>
               <p class="price__item-amount">3,99 USD</p>
             </li>
-            <li class="price__item">Розовый фильтр</li>
-            <li class="price__item">Смайлики</li>
-            <li class="price__item">Комментарии</li>
+            <li class="price__item  price__item--feature">Розовый фильтр</li>
+            <li class="price__item  price__item--feature">Смайлики</li>
+            <li class="price__item  price__item--feature">Комментарии</li>
           </ul>
 
           <ul class="price__list">
-            <li class="price__item">
+            <li class="price__item price__item--shown">
               <b class="price__item-name">Анлим</b>
               <p class="price__item-amount">9,99 USD</p>
             </li>
-            <li class="price__item">Розовый фильтр</li>
-            <li class="price__item">Смайлики</li>
-            <li class="price__item">Комментарии</li>
+            <li class="price__item  price__item--feature">Розовый фильтр</li>
+            <li class="price__item  price__item--feature">Смайлики</li>
+            <li class="price__item  price__item--feature">Комментарии</li>
           </ul>
         </div>
       </section>
