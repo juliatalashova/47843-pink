@@ -1,11 +1,52 @@
 .page-header {
-  @include container;
-}
-.page-header__top {
+ //position: relative;
   background: red;
-  opacity: .8;
+
+  //width: 100%;
+  //@include container;
+  //background-image: $bg-darkblue url("../img/iphone-hand-mobile.png"), url("../img/bg-back-mobile.jpg");
+  //background-position: center, center;
+  //background-repeat: no-repeat ;
+  // no-repeat center;
+  //// no-repeat center;
+  background-size: cover ;
+}
+/*.page-header__img1 {
+  position: absolute;
+  z-index: -1;
+  //left: -60%;
+  //top: 0;
+  width: 100%;
+  height: auto;
+}
+.page-header__img2 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  //top: 90%;
+  //left: 0;
+
+}*/
+.page-header__top {
+  background-color: $bg-darkblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 110px;
+  z-index: 1;
 }
 
 .container {
-  @include clearfix;
+  //@include clearfix;
+  @include container;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
 }
+@media #{$mobile-width-only} {
+  .page-header__top {
+    height: 66px;
+  }
+}
+

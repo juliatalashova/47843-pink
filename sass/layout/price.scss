@@ -1,11 +1,16 @@
 .price {
-  border: 2px solid firebrick;
+  background-color: rgb(242, 242, 242);
+ /* position: absolute;
+  left: -291px;
+  top: 2117px;
+  width: 1281px;
+  height: 534px;
+  z-index: 3;*/
 }
 .price__wrapper {
   @include container;
   display: flex;
   flex-direction: column;
-  border: 2px solid grey;
 }
 .price__wrapper input[type="radio"] {
   display: none;

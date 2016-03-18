@@ -1,13 +1,25 @@
 .download-app {
-  border: 2px solid navajowhite;
+  //border: 2px solid navajowhite;
+  background-color: $bg-darkblue;
 }
 
 .download-app__btn {
   display: block;
   width: 100%;
   text-align: center;
-  border: 1px solid black;
-  border-radius: 10px;
+  color: #ffffff;
+  font-size: 18px;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+  padding: 15px 0;
+  text-decoration: none;
+}
+.download-app__btn:hover {
+  background: #ffffff;
+  color: #d22856;
+}
+.download-app__btn:active {
+
 }
 .download-app__wrapper {
   @include clearfix;
@@ -30,6 +42,10 @@
 }
 .download-app__description {
   text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 100;
 }
 
 @media #{$tablet-width} {

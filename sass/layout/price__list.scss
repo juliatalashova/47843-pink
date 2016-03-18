@@ -1,6 +1,5 @@
 @media #{$mobile-width-only} {
   .price__list {
-    border: 2px solid goldenrod;
     display: none;
     order: -1;
   }
@@ -8,11 +7,38 @@
 .price__list {
   padding: 0;
   margin: 0;
-  text-align: center;
   list-style: none;
   width: auto;
-  border: 2px solid greenyellow;
+  border-left: 2px solid #e5e5e5;
+  border-right: 2px solid #e5e5e5;
 }
+.price__item {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #283645;
+  border-bottom: 2px solid #e5e5e5;
+  text-align: left;
+  padding: 14px 0 14px 22px;
+}
+.price__item--shown {
+  background: $bg-darkblue;
+  text-align: center;
+}
+.price__item-name {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.price__item-amount {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 100;
+  margin: 0;
+}
+
+
 @media #{$desktop-width} {
   .price__list {
     width: 235px;

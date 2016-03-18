@@ -1,7 +1,18 @@
 .advantages {
+  background: #f2f2f2;
   &__item {
     text-align: center;
    }
+}
+.advantages__item-title {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: bold;
+}
+.advantages__item-description {
+  font-size: 14px;
+  color: #283645;
 }
 .advantages-picture {
   display: none;
@@ -37,11 +48,12 @@
    }
  }
   .block-24hour {
-    @include container;
+
     background: aquamarine;
     opacity: .8;
   }
   .block-24hour__wrapper {
+    @include container;
     @include clearfix;
   }
   .block-24hour__item {
@@ -54,6 +66,20 @@
   }
   .block-24hour__picture img {
     display: block;
+  }
+  .block-24hour__item-title {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+  }
+  .block-24hour__item-description {
+    font-size: 14px;
+    color: #283645;
+  }
+  .block-24hour__item__link {
+    color: #d22856;
+    font-size: 14px;
   }
 }
 @media #{$desktop-width} {
