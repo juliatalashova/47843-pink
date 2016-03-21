@@ -1,12 +1,38 @@
 .main-nav {
   display: none;
-  //position: relative;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 66px;
+  width: 100%;
+}
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+}
+.main-nav__item {
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000101;
+}
+
+.main-nav__link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: $bg-darkblue;
+
+  padding: 15px 0;
 }
 .main-nav__toggle {
-  //float: right;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
+
   z-index: 2;
 
   display: block;
@@ -17,18 +43,12 @@
 
   background-color: $bg-darkblue;
   cursor: pointer;
-  margin: 43px 0;
 }
-@media #{$mobile-width-only} {
-  .main-nav__toggle {
-    margin: 21px 0;
-  }
-}
+
 .main-nav__toggle--closed::before {
   content: "";
   position: absolute;
-  top: 3px;
-  left: 0;
+
 
   width: 50px;
   height: 4px;
@@ -37,36 +57,38 @@
   box-shadow: 0 8px 0 0 #ffffff,
   0 16px 0 0 #ffffff;
 }
+@media #{$tablet-width} and (max-width: 1200px) {
+  .main-nav {
+    top: 110px;
+  }
+}
 @media #{$desktop-width} {
   .main-nav {
     display: block;
+    @include container-fluid;
   }
   .main-nav__list {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    list-style: none;
-    //float: right;
-    //width: 645px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   .main-nav__item {
     display: inline-block;
     vertical-align: top;
+    border-bottom: none;
+    border-top: none;
   }
   .main-nav__link {
-    display: block;
-    text-align: center;
-    text-decoration: none;
+    text-transform: none;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 32px;
+    font-weight: normal;
     color: #ffffff;
-    padding: 47px 42px;
+    background: none;
+    padding: 15px 0;
   }
+
   .main-nav__toggle {
-    float: none;
     display: none;
   }
   .main-nav__link:active {
@@ -87,6 +109,4 @@
     height: 5px;
     background: white;
   }
-
-
 }

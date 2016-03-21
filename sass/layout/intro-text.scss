@@ -6,3 +6,33 @@
   line-height: normal;
   margin: 0;
 }
+.intro__text:first-child {
+  padding-top: 45px;
+  padding-bottom: 39px;
+}
+.intro__text:nth-child(2) {
+  padding-bottom: 50px;
+}
+.intro__text--small,
+.intro__text--photo {
+  font-size: 14px;
+  line-height: 30px;
+}
+@media #{$tablet-width} {
+  .intro__text:first-child {
+    padding-bottom: 0;
+  }
+  .intro__text {
+    font-size: 40px;
+  }
+  .intro__text.intro__text--small {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 100px;
+    margin-bottom: 39px;
+  }
+  .intro__text.intro__text--photo {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

@@ -23,8 +23,6 @@ body {
 
 @import "layout/promo-slogan";
 
-@import "layout/main";
-
 @import "layout/promo-stats__text";
 
 @import "layout/intro-text";
@@ -57,12 +55,7 @@ body {
 
 @import "layout/page-footer";
 
-@import "layout/page-footer__social";
-
-@import "layout/page-footer__copyright";
-
 @import "layout/user-personal-info";
 
-@import "layout/success-message";
+@import "layout/popups";
 
-@import "layout/fail-message";

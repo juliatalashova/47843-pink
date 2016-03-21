@@ -1,52 +1,21 @@
-.page-header {
- //position: relative;
-  background: red;
-
-  //width: 100%;
-  //@include container;
-  //background-image: $bg-darkblue url("../img/iphone-hand-mobile.png"), url("../img/bg-back-mobile.jpg");
-  //background-position: center, center;
-  //background-repeat: no-repeat ;
-  // no-repeat center;
-  //// no-repeat center;
-  background-size: cover ;
-}
-/*.page-header__img1 {
-  position: absolute;
-  z-index: -1;
-  //left: -60%;
-  //top: 0;
-  width: 100%;
-  height: auto;
-}
-.page-header__img2 {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  //top: 90%;
-  //left: 0;
-
-}*/
 .page-header__top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 21px 0;
   background-color: $bg-darkblue;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 110px;
-  z-index: 1;
+  //opacity: .3;
+  z-index: 10;
 }
-
 .container {
-  //@include clearfix;
-  @include container;
+  width: 100%;
+  padding: 0 20px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  position: relative;
 }
-@media #{$mobile-width-only} {
+@media #{$tablet-width}  {
   .page-header__top {
-    height: 66px;
+    padding-top: 43px;
+    padding-bottom: 42px;
   }
 }
-

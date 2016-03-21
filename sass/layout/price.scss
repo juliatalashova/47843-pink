@@ -1,12 +1,7 @@
 .price {
   background-color: rgb(242, 242, 242);
- /* position: absolute;
-  left: -291px;
-  top: 2117px;
-  width: 1281px;
-  height: 534px;
-  z-index: 3;*/
 }
+
 .price__wrapper {
   @include container;
   display: flex;
@@ -15,9 +10,13 @@
 .price__wrapper input[type="radio"] {
   display: none;
 }
-#price-radio-1:checked ~ .price__list:nth-of-type(1),
-#price-radio-2:checked ~ .price__list:nth-of-type(2),
-#price-radio-3:checked ~ .price__list:nth-of-type(3) {
+.price__nav {
+  padding-top: 40px;
+  padding-bottom: 47px;
+}
+#price-radio-1:checked ~ .price__list:nth-child(6),
+#price-radio-2:checked ~ .price__list:nth-child(7),
+#price-radio-3:checked ~ .price__list:nth-child(8) {
   display: block;
 }
 #price-radio-1:checked ~ .slider-nav label[for="price-radio-1"],

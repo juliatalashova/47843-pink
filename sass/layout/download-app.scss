@@ -1,5 +1,4 @@
 .download-app {
-  //border: 2px solid navajowhite;
   background-color: $bg-darkblue;
 }
 
@@ -22,8 +21,8 @@
 
 }
 .download-app__wrapper {
-  @include clearfix;
-  width: 210px;
+  display: flex;
+  justify-content: space-between;
 
 }
 .download-app__link {
@@ -31,15 +30,7 @@
   width: 33.3%;
   text-align: center;
 }
-.download-app__link--android {
-  float: left;
-}
-.download-app__link--apple {
-  float: left;
-}
-.download-app__link--windows {
-  float: right;
-}
+
 .download-app__description {
   text-align: center;
   color: #ffffff;
@@ -48,8 +39,3 @@
   font-weight: 100;
 }
 
-@media #{$tablet-width} {
-  .download-app {
-    width: 300px;
-  }
-}

@@ -1,20 +1,30 @@
+.promo-slogan {
+  background-color: $bg-darkblue;
+  background-image: url("../img/iphone-hand-mobile.png"), url("../img/bg-back-mobile.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-position:  bottom left, center;
+  background-size: 258px, cover;
+}
+
 .promo-slogan__title {
   text-align: center;
   font-size: 40px;
   font-weight: 100;
   line-height: normal;
   color: #ffffff;
+  margin: 0;
 }
+
 .promo-slogan--visible {
   text-align: center;
 }
-@media #{$mobile-width-only} {
+/*@media #{$mobile-width-only} {
   .promo-slogan__title {
     display: none;
   }
-}
-@media #{$tablet-width} {
+}*/
+/*@media #{$tablet-width} {
   .promo-slogan {
     width: 200px;
   }
-}
+}*/

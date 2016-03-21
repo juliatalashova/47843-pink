@@ -8,8 +8,6 @@
   </head>
   <body>
     <header class="page-header">
-      <!--<img src="img/bg-back-mobile.jpg" alt="bg" class="page-header__img1">
-      <img src="img/iphone-hand-mobile.png" alt="bg2" class="page-header__img2">-->
       <div class="page-header__top">
         <div class="container">
           <div class="logo logo--top">
@@ -28,11 +26,11 @@
           </nav>
         </div>
       </div>
-      <div class="promo-slogan  promo-slogan--bg">
-        <div class="promo-slogan__wrapper">
-          <h1 class="promo-slogan__title">Взгляните на жизнь иначе!</h1>
+      <div class="promo-slogan">
+        <h1 class="promo-slogan__title">Взгляните на жизнь иначе!</h1>
+        <div class="download-app__container">
           <div class="download-app">
-            <a class="download-app__btn  btn" href="#">Скачать приложение</a>
+            <a class="download-app__btn" href="#">Скачать приложение</a>
             <div class="download-app__wrapper">
               <a class="download-app__link  download-app__link--apple" href="#">apple</a>
               <a class="download-app__link  download-app__link--android" href="#">andr</a>
@@ -45,7 +43,7 @@
     </header>
     <main class="main">
       <p class="intro__text">Устали от серости мегаполиса?</p>
-      <p class="intro__text">Нам есть, что вам предложить!</p>
+      <p class="intro__text">Нам есть, что вам<br> предложить!</p>
 
       <section class="advantages">
         <div class="advantages__container">
@@ -62,7 +60,7 @@
 
             <div class="advantages__item">
               <b class="advantages__item-title">Заводит новых друзей</b>
-              <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями и заводите новых</p>
+              <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </div>
           </div>
           <div class="advantages-picture__wrapper">
@@ -73,7 +71,7 @@
               <img src="http://placehold.it/240x430" width="250" height="430" alt="Phone with hello, everybody picture">
             </div>
             <div class="advantages-picture advantages-picture--shown">
-              <img src="img/iphone-screen-mobile.png" width="157" height="320" alt="Phone with hello, everybody picture">
+              <img src="http://placehold.it/240x430" width="250" height="430" alt="Phone with hello, everybody picture">
             </div>
           </div>
         </div>
@@ -94,10 +92,10 @@
       <section class="reviews">
         <div class="reviews__wrapper">
           <div class="reviews-items">
-        <!--feedback slider-->
             <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-1" checked>
             <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-2">
             <input class="slider-nav__switcher" type="radio" name="reviews" id="reviews-radio-3">
+            <!--feedback slider-->
 
             <blockquote class="reviews-item  reviews-item--active">
               <cite class="reviews-item__author">Николай Петров</cite>
@@ -141,14 +139,10 @@
             <label class="slider-nav__btn  btn--hidden" for="price-radio-3">3</label>
           </div>
 
-          <ul class="price__list">
-            <li class="price__item">
-              <b class="price__item-name"></b>
-              <p class="price__item-amount"></p>
-            </li>
-            <li class="price__item">Розовый фильтр</li>
-            <li class="price__item">Смайлики</li>
-            <li class="price__item">Комментарии</li>
+          <ul class="side__list">
+            <li class="side__item"><div>Розовый фильтр</div></li>
+            <li class="side__item"><div>Смайлики</div></li>
+            <li class="side__item"><div>Комментарии</div></li>
           </ul>
 
           <ul class="price__list">
@@ -156,9 +150,9 @@
               <b class="price__item-name">База</b>
               <p class="price__item-amount">1,99 USD</p>
             </li>
-            <li class="price__item  price__item--feature">Розовый фильтр</li>
-            <li class="price__item  price__item--feature">Смайлики</li>
-            <li class="price__item  price__item--feature">Комментарии</li>
+            <li class="price__item"><div>Розовый фильтр</div></li>
+            <li class="price__item"><div>Смайлики</div></li>
+            <li class="price__item"><div>Комментарии</div></li>
           </ul>
 
           <ul class="price__list">
@@ -166,9 +160,9 @@
               <b class="price__item-name">Стандарт</b>
               <p class="price__item-amount">3,99 USD</p>
             </li>
-            <li class="price__item  price__item--feature">Розовый фильтр</li>
-            <li class="price__item  price__item--feature">Смайлики</li>
-            <li class="price__item  price__item--feature">Комментарии</li>
+            <li class="price__item"><div>Розовый фильтр</div></li>
+            <li class="price__item"><div>Смайлики</div></li>
+            <li class="price__item"><div>Комментарии</div></li>
           </ul>
 
           <ul class="price__list">
@@ -176,9 +170,9 @@
               <b class="price__item-name">Анлим</b>
               <p class="price__item-amount">9,99 USD</p>
             </li>
-            <li class="price__item  price__item--feature">Розовый фильтр</li>
-            <li class="price__item  price__item--feature">Смайлики</li>
-            <li class="price__item  price__item--feature">Комментарии</li>
+            <li class="price__item"><div>Розовый фильтр</div></li>
+            <li class="price__item"><div>Смайлики</div></li>
+            <li class="price__item"><div>Комментарии</div></li>
           </ul>
         </div>
       </section>
@@ -202,7 +196,7 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.299106812745!2d30.322155254096117!3d59.93880896131098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1457197659138"></iframe>"
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.299106812745!2d30.322155254096117!3d59.93880896131098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1457197659138"></iframe>
         </div>
       </section>
     </main>
