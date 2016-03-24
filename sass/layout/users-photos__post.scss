@@ -1,5 +1,5 @@
-.users-photos__post.users-photos__post-panorama {
-  @include container;
+.users-photos-item__full-view.users-photos-item__full-view--big {
+  width: 100%;
 }
 .users-photos__post {
   background: #f2f2f2;
@@ -26,4 +26,8 @@
   text-decoration: none;
   font-weight: normal;
 }
-
+@media #{$desktop-width} {
+  .users-photos__post {
+    flex-grow: 1;
+  }
+}

@@ -2,6 +2,12 @@
   width: 100%;
   margin-bottom: 20px;
 }
+.users-photos-item__container {
+  @include container;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .users-photos__full-view {
   display: block;
 }
@@ -13,10 +19,15 @@
   .users-photos-item {
     width: 48.4%;
   }
+  .users-photos-item.users-photos-item--panorama {
+    width: 100%;
+  }
 }
 @media #{$desktop-width} {
   .users-photos-item {
     width: 32%;
+    display: flex;
+    flex-direction: column;
   }
 }
 

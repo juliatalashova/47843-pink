@@ -30,7 +30,6 @@
 .range-filter__bar {
   height: 2px;
   background: #283645;
-  margin: 0 20px;
 }
 .range-filter__toggle {
   position: absolute;
@@ -47,6 +46,10 @@
   border-top: 1px solid #dddfe0;
   padding-top: 38px;
   padding-bottom: 41px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .photo-upload .btn {
   width: 100%;
@@ -55,9 +58,9 @@
   background: #ffffff;
   color: #d22856;
   font-size: 18px;
-  line-height: 18px;
   font-weight: 700;
-  padding: 18px 0;
+  //padding: 18px 0;
+  line-height: 49px;
   margin-bottom: 12px;
   display: block;
   text-align: center;
@@ -76,6 +79,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .range-filter__scale-wrapper {
+    width: 66.8%;
+  }
   .range-filters__controls-wrapper {
     width: 48.4%;
     display: flex;
@@ -84,20 +90,24 @@
   }
   .range-filters__controls {
     flex-direction: column;
+    justify-content: flex-start;
     margin-top: 0;
     width: 18%;
   }
   .range-filters__controls-link {
     width: 18%;
-    margin-bottom: 30px;
+    //margin-bottom: 30px;
+    margin: 4px 0;
   }
   .range-filter__scale:nth-child(2),
   .range-filter__scale:nth-child(3) {
     display: block;
   }
   .range-filter__scale {
-    width: 80%;
     margin-top: 13px;
+  }
+  .photo-upload {
+    margin: 0 auto;
   }
   .btn.photo-upload__reset,
   .btn.photo-upload__submit {
@@ -112,8 +122,8 @@
   }
   .photo-upload {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    width: 100%;
   }
   .btn.photo-upload__reset,
   .btn.photo-upload__submit {
