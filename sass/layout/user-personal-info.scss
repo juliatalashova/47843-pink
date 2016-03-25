@@ -1,18 +1,11 @@
-#user-personal-info {
-  border: 2px solid darkorange;
-  @include container;
-
-
+.user-personal-info {
+  margin-top: 50px;
 }
 @media #{$tablet-width} {
-  #user-personal-info {
+  .user-personal-info {
+    @include container;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: space-between;
   }
-
-}
-@media #{$desktop-width} {
-
 }

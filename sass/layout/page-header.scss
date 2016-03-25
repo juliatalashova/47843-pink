@@ -1,11 +1,29 @@
-.page-header {
-  @include container;
-}
 .page-header__top {
-  background: red;
-  opacity: .8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 21px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
 }
-
 .container {
-  @include clearfix;
+  @include container;
+  max-width: 940px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+@media #{$tablet-width}  {
+  .page-header__top {
+    padding-top: 43px;
+    padding-bottom: 42px;
+  }
+}
+@media #{$desktop-width} {
+  .page-header__top {
+    position: static;
+    top: 0;
+  }
 }

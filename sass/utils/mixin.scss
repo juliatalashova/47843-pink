@@ -32,4 +32,12 @@
     width: 780px;
   }
 }
+@mixin container-fluid() {
+  width: auto;
 
+  @media #{$tablet-width} {
+    width: 84%;
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}

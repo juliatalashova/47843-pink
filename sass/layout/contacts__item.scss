@@ -1,7 +1,31 @@
 .contacts__item {
-  border: 2px solid darkolivegreen;
   text-align: center;
+  margin-bottom: 32px;
+  width: 280px;
+}
+.contacts__item-title {
+  font-weight: bold;
 }
 .contacts__item-info {
   display: block;
+  color: #d22856;
+  font-size: 24px;
+  text-decoration: none;
+}
+.contacts__item-info:hover {
+  color: #283645;
+  text-decoration: underline;
+}
+.contacts__item-info:active {
+  color: rgba(40, 54, 64, .3);
+  text-decoration: none;
+}
+@media #{$tablet-width} {
+  .contacts__item {
+    width: 300px;
+  }
+  .contacts__item--center {
+    margin: 0 auto;
+    padding-bottom: 29px;
+  }
 }

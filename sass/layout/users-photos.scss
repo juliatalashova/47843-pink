@@ -1,15 +1,11 @@
 .users-photos {
   @include container;
 }
-.users-photos__promo {
-  text-align: center;
-}
 @media #{$tablet-width} {
   .users-photos {
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: center;
-    // не знаю точно как сделать чтоб посты были в таком порядке как в макете
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
+

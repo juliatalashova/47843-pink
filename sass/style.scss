@@ -1,10 +1,11 @@
 body {
-  margin: 0;
   padding: 0;
   font-size: 18px;
+  line-height: 24px;
   color: #283645;
   font-family: "Open Sans", Arial, sans-serif;
-  background: #fff;
+  background: #ffffff;
+  font-style: normal;
 }
 
 @import "base/normalize";
@@ -20,8 +21,6 @@ body {
 @import "layout/main-nav";
 
 @import "layout/promo-slogan";
-
-@import "layout/main";
 
 @import "layout/promo-stats__text";
 
@@ -55,12 +54,7 @@ body {
 
 @import "layout/page-footer";
 
-@import "layout/page-footer__social";
-
-@import "layout/page-footer__copyright";
-
 @import "layout/user-personal-info";
 
-@import "layout/success-message";
+@import "layout/popups";
 
-@import "layout/fail-message";

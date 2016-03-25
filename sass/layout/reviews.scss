@@ -47,11 +47,14 @@
 
 .reviews-item__author {
   display: block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: bold;
+  font-style: normal;
 }
 .reviews-item {
   text-align: center;
-}
-.reviews-item {
   display: none;
 }
 /*.reviews-item--active {
@@ -71,10 +74,9 @@
 #reviews-radio-3:checked ~ .reviews-item:nth-of-type(3) {
   display: block;
 }
+
 #reviews-radio-1:checked ~ .slider-nav label[for="reviews-radio-1"],
 #reviews-radio-2:checked ~ .slider-nav label[for="reviews-radio-2"],
 #reviews-radio-3:checked ~ .slider-nav label[for="reviews-radio-3"] {
   background-color: #000000;
 }
-
-
