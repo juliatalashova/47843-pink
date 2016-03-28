@@ -15,12 +15,30 @@
   display: block;
   width: 100%;
 }
+
+.users-photos-item__full-view.users-photos-item__full-view--big .hit {
+  position: absolute;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  background: $pink-color;
+  text-transform: uppercase;
+  width: 140px;
+  line-height: 36px;
+  right: 20px;
+
+}
 @media #{$tablet-width} {
   .users-photos-item {
     width: 48.4%;
   }
   .users-photos-item.users-photos-item--panorama {
     width: 100%;
+  }
+  .users-photos-item__full-view.users-photos-item__full-view--big .hit {
+    bottom: 15px;
+    right: 40px;
   }
 }
 @media #{$desktop-width} {

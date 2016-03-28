@@ -11,8 +11,12 @@
       <div class="page-header__top">
         <div class="container">
           <div class="logo">
-            <a href="#">
-              <img src="http://placehold.it/80x25" width="80" height="25" alt="Pink">
+            <a href="index.html">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+                <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+              </picture>
             </a>
           </div>
           <a class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</a>
@@ -26,17 +30,20 @@
           </nav>
         </div>
       </div>
-      <div class="promo-slogan  promo-slogan--photo">
-        <div class="promo-slogan__wrapper">
-          <h1 class="promo-slogan__title  promo-slogan__title--photo">Фотографии пользователей</h1>
-        </div>
+      <div class="promo-slogan">
+        <h1 class="promo-slogan__title">Фотографии пользователей</h1>
       </div>
     </header>
     <main class="main">
       <p class="intro__text intro__text--photo">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <article class="users-photos-item  users-photos-item--panorama">
         <a class="users-photos-item__full-view  users-photos-item__full-view--big" href="#">
-          <img src="img/panorama-mobile.jpg" width="320" height="137" alt="Panorama">
+          <div class="hit">Панорама дня</div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="panorama">
+          </picture>
         </a>
         <div class="users-photos-item__container">
           <blockquote class="users-photos__post users-photos__post-panorama">
@@ -51,7 +58,11 @@
 
         <article class="users-photos-item">
           <a class="users-photos-item__full-view" href="#">
-            <img src="img/photo-1-mobile.jpg" width="280" height="180" alt="car">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="car">
+            </picture>
           </a>
           <blockquote class="users-photos__post">
             <cite class="users-photos-item__author">Левон</cite>
@@ -63,7 +74,11 @@
 
         <article class="users-photos-item">
           <a class="users-photos-item__full-view" href="#">
-            <img src="img/photo-2-mobile.jpg" width="280" height="180" alt="drums">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="drums">
+            </picture>
           </a>
           <blockquote class="users-photos__post">
             <cite class="users-photos-item__author">Антон</cite>
@@ -75,7 +90,11 @@
 
         <article class="users-photos-item">
           <a class="users-photos-item__full-view" href="#">
-            <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="skyscraper">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="skyscraper">
+            </picture>
           </a>
           <blockquote class="users-photos__post">
             <cite class="users-photos-item__author">Борис</cite>
@@ -87,7 +106,11 @@
 
         <article class="users-photos-item">
           <a class="users-photos__full-view" href="#">
-            <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="market">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="market">
+            </picture>
           </a>
           <blockquote class="users-photos__post">
             <cite class="users-photos-item__author">Сергей</cite>
@@ -99,7 +122,11 @@
 
         <article class="users-photos-item">
           <a class="users-photos-item__full-view" href="#">
-            <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="legs">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="legs">
+            </picture>
           </a>
           <blockquote class="users-photos__post">
             <cite class="users-photos-item__author">Максим</cite>
@@ -111,7 +138,11 @@
 
         <article class="users-photos-item">
           <a class="users-photos-item__full-view" href="#">
-            <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="airplane">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="airplane">
+            </picture>
           </a>
           <blockquote class="users-photos__post">
             <cite class="users-photos-item__author">Надежда</cite>
@@ -122,13 +153,16 @@
         </article>
       </section>
       <div class="users-photos__promo">
-        <!--Здесь оставить этот div? или р сам по себе может быть?-->
-        <p class="intro__text intro__text--photo">Затмите их всех!</p>
-        <p class="intro__text intro__text--photo">Выкладывайте все, что накопилось в телефоне!</p>
+        <p class="intro__text intro__text--promo">Затмите их всех!</p>
+        <p class="intro__text intro__text--promo">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
       <form method="get" action="#" class="range-filters">
         <div class="range-filters__wrapper">
-          <img src="img/photo-7-mobile.jpg" width="280" height="374" alt="winter">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-7-desktop.jpg 1x, img/photo-7-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/photo-7-tablet.jpg 1x, img/photo-7-tablet@2x.jpg 2x">
+            <img src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" alt="winter">
+          </picture>
           <div class="range-filters__controls-wrapper">
             <div class="range-filters__controls">
               <a class="range-filters__controls-link" href="#">svg</a>

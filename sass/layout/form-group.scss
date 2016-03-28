@@ -65,6 +65,21 @@ input[type="radio"] + label {
   padding: 30px 0;
   position: relative;
 }
+input[type="checkbox"] + label::before,
+input[type="radio"] + label::before {
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+input[type="radio"] + label::before {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
 .user-feedback__comments {
   outline: none;
   border: 2px solid #e5e5e5;
@@ -247,18 +262,4 @@ textarea::-webkit-input-placeholder {
 }
 
 
-//input[type="checkbox"] + label::before,
-//input[type="radio"] + label::before {
-//  position: absolute;
-//  left: 0;
-//  width: 35px;
-//  height: 35px;
-//  border: 2px solid #e5e5e5;
-//  background-color: #FFFFFF;
-//}
-//input[type="radio"] + label::before {
-//  -webkit-border-radius: 50%;
-//  -moz-border-radius: 50%;
-//  border-radius: 50%;
-//}
-//
+

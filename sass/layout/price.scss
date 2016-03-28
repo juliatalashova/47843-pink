@@ -22,7 +22,8 @@
 #price-radio-1:checked ~ .slider-nav label[for="price-radio-1"],
 #price-radio-2:checked ~ .slider-nav label[for="price-radio-2"],
 #price-radio-3:checked ~ .slider-nav label[for="price-radio-3"] {
-  background-color: #000000;
+  border: 3px solid #283645;
+  background: #ffffff;
 }
 @media #{$desktop-width} {
   .btn--hidden {

@@ -59,6 +59,19 @@
   background: $bg-darkblue;
   text-align: center;
 }
+.price__item.price__item--shown {
+  position: relative;
+
+}
+.price__item.price__item--shown::after {
+  position: absolute;
+  //content: "";
+  top: 0;
+  right: 0;
+  width: 74px;
+  height: 73px;
+  background: url("../img/bg-hit.svg") no-repeat;
+}
 .price__item-name,
 .side__item-name {
   color: #ffffff;

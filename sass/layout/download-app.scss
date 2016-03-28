@@ -17,7 +17,7 @@
 }
 .download-app__btn:hover {
   background: #ffffff;
-  color: #d22856;
+  color: $pink-color;
 }
 .download-app__btn:active {
 
@@ -25,6 +25,7 @@
 .download-app__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-top: 32px;
 
 }
 .download-app__link {
@@ -39,13 +40,15 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 100;
+  margin: 0;
+  padding-top: 10px;
 }
 @media #{$tablet-width} {
   .download-app {
     width: 300px;
     background-color: transparent;
-    padding: 0;
     margin-left: 40px;
+    padding: 0 0 132px 0;
   }
 }
 @media #{$desktop-width} {

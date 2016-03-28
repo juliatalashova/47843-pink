@@ -17,13 +17,11 @@
 }
 @media #{$tablet-width}  {
   .page-header__top {
-    padding-top: 43px;
-    padding-bottom: 42px;
+    padding: 35px 0;
   }
 }
 @media #{$desktop-width} {
   .page-header__top {
     position: static;
-    top: 0;
   }
 }

@@ -1,6 +1,6 @@
 .reviews__wrapper {
   @include container;
-  position: relative;
+  //position: relative;
   padding-top: 45px;
 }
 .reviews-items {
@@ -20,11 +20,10 @@
   position: relative;
 
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   margin: 0 13px;
-
-  border: 1px solid #000000;
+  background: #bec2c7;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
@@ -78,5 +77,6 @@
 #reviews-radio-1:checked ~ .slider-nav label[for="reviews-radio-1"],
 #reviews-radio-2:checked ~ .slider-nav label[for="reviews-radio-2"],
 #reviews-radio-3:checked ~ .slider-nav label[for="reviews-radio-3"] {
-  background-color: #000000;
+  border: 3px solid #283645;
+  background: #ffffff;
 }
