@@ -15,7 +15,7 @@
 .promo-slogan--index {
   background-image: url("../img/iphone-hand-mobile.png"), url("../img/bg-back-mobile.jpg");
   background-repeat:  no-repeat, no-repeat;
-  background-position: left 39%, center;
+  background-position: left 100%, center;
   background-size: 258px, cover;
   padding-top: 458px;
 }
@@ -29,10 +29,9 @@
 }
 
 .promo-slogan__container {
-  width: 300px;
+  width: 320px;
   position: absolute;
-  top: 213px;
-  //margin-left: 40px;
+  top: 185px;
 }
 .promo-slogan__title{
   display: block;
@@ -45,13 +44,8 @@
   padding: 102px 49px 52px 49px;
 }
 .promo-slogan__title.promo-slogan__title--index  {
-  text-align: center;
   font-size: 40px;
-  line-height: normal;
-  font-weight: 100;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
+  padding: 0 40px;
 }
 
 
@@ -62,6 +56,7 @@
     background-repeat: no-repeat, no-repeat;
     background-position: bottom center, center;
     background-size: 700px, cover;
+    padding-top: 730px;
   }
   .promo-slogan__title {
     font-size: 50px;
@@ -77,6 +72,8 @@
   }
   .promo-slogan__container {
     margin-left: 40px;
+    width: 300px;
+    top: 200px;
   }
 }
 @media #{$desktop-width} {
@@ -89,7 +86,9 @@
   }
   .promo-slogan.promo-slogan--index {
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop.jpg");
+    background-position: bottom left 82%, center;
     background-size: 1050px, cover;
+    padding-top: 853px;
   }
   @media
   (min-resolution: 144dpi),

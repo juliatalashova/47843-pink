@@ -41,9 +41,20 @@
 .contacts__heading:nth-child(2) {
   padding-top: 0;
 }
+/*.contacts__map {
+  background: url("../img/bg-map.png") no-repeat;
+  background-size: cover;
+  padding-top: 219px;
+  position: relative;
+}
+.contacts__map svg {
+  top: 75%;
+  left: 45%;
+  position: absolute;
+}*/
 .contacts__map iframe {
   width: 100%;
-  min-height: 200px;
+  min-height: 220px;
   border: none;
 }
 @media #{$tablet-width} {

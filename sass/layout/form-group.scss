@@ -68,9 +68,10 @@ input[type="radio"] + label {
 input[type="checkbox"] + label::before,
 input[type="radio"] + label::before {
   position: absolute;
+  content: " ";
   left: 0;
-  width: 35px;
-  height: 35px;
+  width: 37px;
+  height: 37px;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
 }
@@ -79,7 +80,41 @@ input[type="radio"] + label::before {
   -moz-border-radius: 50%;
   border-radius: 50%;
 }
+input[type="radio"]:checked + label::after {
+  position: absolute;
+  content: " ";
+  width: 15px;
+  height: 15px;
+  left: 12px;
+  top: 43px;
+  background-color: $pink-color;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+      border-radius: 50%;
+}
+input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: " ";
+  background-color: transparent;
 
+  /* position the checkbox */
+  left: 15px;
+  top: 35px;
+
+  /* setting the checkbox */
+  /* short arm */
+  width: 7px;
+  border-bottom: 3px solid $pink-color;
+  /* long arm */
+  height: 20px;
+  border-right: 3px solid $pink-color;
+
+  /* rotate the mirrored L to make it a checkbox */
+  transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
 .user-feedback__comments {
   outline: none;
   border: 2px solid #e5e5e5;

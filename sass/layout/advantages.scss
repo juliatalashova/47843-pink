@@ -1,8 +1,12 @@
 .advantages {
-  background: $bg-grey;
+  background: $bg-grey linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, $bg-grey 50%, $bg-grey 100%) top no-repeat;
+  background-size: 100% 30px;
 }
 .advantages__container {
   @include container;
+}
+.advantages__wrapper {
+  padding-top: 57px;
 }
 .advantages__item {
   text-align: center;
@@ -65,6 +69,32 @@
   }
   .block-24hour__picture {
     width: 50%;
+    position: relative;
+  }
+  .block-24hour__picture::before {
+    position: absolute;
+    content: " ";
+    top: 68px;
+    left: 30px;
+    width: 150px;
+    height: 150px;
+    border: 15px solid $pink-color;
+    border-radius: 50%;
+  }
+  .block-24hour__picture::after {
+    position: absolute;
+    content: "24";
+    top: 77px;
+    left: 65px;
+    font-size: 96px;
+    line-height: 149px;
+    font-weight: 700;
+    color: $pink-color
+  }
+  .block-24hour__picture svg {
+    fill: #dedede;
+    width: 240px;
+    height: 276px;
   }
   .block-24hour__item-title {
     font-size: 30px;
@@ -105,6 +135,26 @@
   }
   .advantages-picture {
     display: block;
+  }
+  .block-24hour__picture svg {
+    width: 298px;
+    height: 346px;
+  }
+  .block-24hour__picture::before {
+    position: absolute;
+    content: " ";
+    top: 87px;
+    left: 40px;
+    width: 189px;
+    height: 189px;
+
+  }
+  .block-24hour__picture::after {
+    font-size: 120px;
+    line-height: 186px;
+    top: 95px;
+    left: 80px;
+
   }
   .advantages-picture--shown {
     margin-top: 0;

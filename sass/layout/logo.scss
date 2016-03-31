@@ -4,18 +4,29 @@
 .logo img {
   display: block;
 }
-.logo--top img {
-  width: 75px;
-  height: 23px;
+.logo--top {
+  z-index: 2;
 }
-/*
-.logo--bottom img {
-  width: 150px;
-  height: 50px;
-}*/
 
+.logo--bottom svg {
+  width: 146px;
+  height: 40px;
+}
+.logo--bottom .logo--bottom--pink {
+  fill: #283645;
+}
+.logo--bottom .logo--bottom--pink:hover {
+  fill: $pink-color;
+}
+.logo--bottom .logo--bottom--pink:active {
+  fill: rgba(40, 54, 69, .3);
+}
 @media #{$tablet-width} {
   .logo--bottom {
     width: 33.3333%;
   }
+  /*.logo--top img {
+    width: 75px;
+    height: 23px;
+  }*/
 }

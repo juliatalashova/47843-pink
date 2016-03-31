@@ -1,11 +1,13 @@
 .price {
-  background-color: rgb(242, 242, 242);
+  background: $bg-grey linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, $bg-grey 50%, $bg-grey 100%) top no-repeat;
+  background-size: 100% 30px;
 }
 
 .price__wrapper {
   @include container;
   display: flex;
   flex-direction: column;
+  padding-top: 82px;
 }
 .price__wrapper input[type="radio"] {
   display: none;
@@ -25,15 +27,6 @@
   border: 3px solid #283645;
   background: #ffffff;
 }
-@media #{$desktop-width} {
-  .btn--hidden {
-    display: none;
-  }
-  .price__wrapper {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
 @media #{$tablet-width} {
   .btn--hidden {
     display: none;
@@ -43,3 +36,13 @@
     justify-content: center;
   }
 }
+@media #{$desktop-width} {
+  .btn--hidden {
+    display: none;
+  }
+  /*.price__wrapper {
+    flex-direction: row;
+    justify-content: center;
+  }*/
+}
+
