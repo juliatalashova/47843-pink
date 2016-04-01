@@ -1,6 +1,84 @@
+@media #{$mobile-width-only} {
+  .reviews-item__author-info {
+    display: none;
+  }
+}
+.reviews-item {
+  text-align: center;
+  display: none;
+  margin: 0;
+  width: 100%;
+}
+
+
+.reviews-item__author {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+}
+.reviews-item__author-info,
+.reviews-item__text{
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+}
+.reviews-item__text {
+  margin-bottom: 37px;
+}
+
+@media #{$tablet-width} {
+  .reviews-items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .reviews-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .reviews-item__text {
+    //order: -1;
+  }
+}
+@media #{$desktop-width} {
+  .reviews-item {
+    width: 87.2%;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.reviews-item__text,
+.reviews-item__author-info {
+  margin-bottom: 37px;
+  font-size: 14px;
+  line-height: 30px;
+  //margin: 0;
+}
+
+
+
 @media #{$tablet-width} {
   .reviews-item__text {
     display: none;
+  }
+  .reviews-item__author-info {
+    padding-bottom: 40px;
+    margin-bottom: 0;
   }
 }
 //сделала флекс, но теперь все слайды показываются на десктопе, а не 1. почему?
@@ -11,9 +89,9 @@
   }
   .reviews-item__text {
     order: -1;
-    display: block;
     font-size: 14px;
     line-height: 30px;
     color: #283645;
   }
 }
+*/

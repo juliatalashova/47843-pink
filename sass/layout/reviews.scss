@@ -1,7 +1,10 @@
 .reviews__wrapper {
   @include container;
-  //position: relative;
   padding-top: 45px;
+  padding-bottom: 35px;
+}
+.reviews__wrapper .icon-quotes {
+  display: none;
 }
 .reviews-items {
   position: relative;
@@ -12,26 +15,31 @@
 
 .slider-nav {
   font-size: 0;
-  text-align: center;
-  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  margin: 0 auto;
 }
 
 .slider-nav__btn {
   position: relative;
-
   display: inline-block;
   width: 6px;
   height: 6px;
-  margin: 0 13px;
   background: #bec2c7;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -o-border-radius: 50%;
   border-radius: 50%;
   cursor: pointer;
-
 }
-
+.slider-nav__btn:hover {
+  background: #7e868f;
+}
+.slider-nav__btn:active {
+  background: #e9ebec;
+}
 /*.slider-nav__btn::after {
   content: "";
   position: absolute;
@@ -44,26 +52,12 @@
 
 }*/
 
-.reviews-item__author {
-  display: block;
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
-  font-weight: bold;
-  font-style: normal;
-}
-.reviews-item {
-  text-align: center;
-  display: none;
-}
+
+
 /*.reviews-item--active {
   display: block;
 }*/
-@media #{$mobile-width-only} {
-  .reviews-item__author-info {
-    display: none;
-  }
-}
+
 .reviews__toggle {
   display: none;
 }
@@ -80,3 +74,40 @@
   border: 3px solid #283645;
   background: #ffffff;
 }
+@media #{$desktop-width} {
+  .reviews__wrapper {
+    position: relative;
+  }
+  .reviews__wrapper .icon-quotes {
+    display: block;
+    fill: #efefef;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+  .slider-nav {
+    display: none;
+  }
+  .reviews__toggle {
+    display: block;
+    //border: none;
+    //background: none;
+  }
+  .reviews__toggle .arrow {
+    fill: #caced1;
+    position: absolute;
+    top: 50%;
+  }
+  .reviews__toggle .arrow-right {
+    right: 0;
+  }
+  .reviews__toggle .arrow-left {
+    left: 0;
+  }
+  #reviews-radio-1:checked ~ .reviews-item:nth-of-type(1),
+  #reviews-radio-1:checked ~ .reviews__toggle .arrow-right {
+    display: block;
+  }
+}
+
+
+
