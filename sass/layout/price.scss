@@ -2,7 +2,6 @@
   background: $bg-grey linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, $bg-grey 50%, $bg-grey 100%) top no-repeat;
   background-size: 100% 30px;
 }
-
 .price__wrapper {
   @include container;
   display: flex;
@@ -27,6 +26,7 @@
   border: 3px solid #283645;
   background: #ffffff;
 }
+
 @media #{$tablet-width} {
   .btn--hidden {
     display: none;
@@ -39,6 +39,7 @@
     display: none;
   }
 }
+
 @media #{$desktop-width} {
   .btn--hidden {
     display: none;

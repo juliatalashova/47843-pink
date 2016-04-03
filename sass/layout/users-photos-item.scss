@@ -27,8 +27,8 @@
   width: 140px;
   line-height: 36px;
   right: 20px;
-
 }
+
 @media #{$tablet-width} {
   .users-photos-item {
     width: 48.4%;
@@ -37,10 +37,11 @@
     width: 100%;
   }
   .users-photos-item__full-view.users-photos-item__full-view--big .hit {
-    bottom: 15px;
     right: 40px;
+    margin-top: 65px;
   }
 }
+
 @media #{$desktop-width} {
   .users-photos-item {
     width: 32%;

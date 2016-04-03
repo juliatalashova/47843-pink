@@ -20,5 +20,16 @@
   }
 }
 
+@mixin promo-container() {
+  width: 320px;
+  margin: 0 auto;
 
+  @media #{$tablet-width} {
+    width: 620px;
+  }
+
+  @media #{$desktop-width} {
+    width: 940px;
+  }
+}
 

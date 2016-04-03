@@ -44,7 +44,6 @@
   overflow: hidden;
 }
 
-
 @media #{$tablet-width} {
   .advantages__container {
     display: flex;
@@ -74,14 +73,12 @@
   .block-24hour {
     padding-top: 55px;
     padding-bottom: 50px;
-    background: lightyellow;
   }
   .block-24hour__wrapper {
     @include container;
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-
   }
   .block-24hour__item {
     width: 50%;
@@ -90,16 +87,6 @@
     width: 48.4%;
     position: relative;
   }
-  /*.block-24hour__picture::before {
-    position: absolute;
-    content: " ";
-    top: 68px;
-    left: 30px;
-    width: 150px;
-    height: 150px;
-    border: 15px solid $pink-color;
-    border-radius: 50%;
-  }*/
   .block-24hour__picture::after {
     position: absolute;
     content: "24";
@@ -143,8 +130,8 @@
   .block-24hour__item__link:active {
     color: rgba(40, 54, 69, .3);
   }
-
 }
+
 @media #{$desktop-width} {
   .advantages {
     background-size: 100% 100px;
@@ -168,10 +155,8 @@
     font-size: 30px;
     line-height: 30px;
     text-align: center;
-
   }
   .advantages__item-description {
-    font-size: 18px;
     text-align: center;
     line-height: 30px;
     margin-top: 20px;
@@ -180,13 +165,11 @@
   .advantages-picture {
     display: block;
   }
-
   .block-24hour__picture::after {
     font-size: 120px;
     line-height: 186px;
     top: 95px;
     left: 80px;
-
   }
   .advantages-picture--shown {
     margin-top: 0;
@@ -205,5 +188,4 @@
     width: 300px;
     height: 347px;
   }
-
 }

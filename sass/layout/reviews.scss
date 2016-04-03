@@ -1,18 +1,18 @@
+.reviews {
+  padding-top: 45px;
+  padding-bottom: 38px;
+}
 .reviews__wrapper {
   @include container;
-  padding-top: 45px;
-  padding-bottom: 35px;
+  position: relative;
+  overflow: hidden;
 }
 .reviews__wrapper .icon-quotes {
   display: none;
 }
-.reviews-items {
-  position: relative;
-}
-.reviews-items input[type="radio"] {
+.reviews__wrapper input[type="radio"] {
   display: none;
 }
-
 .slider-nav {
   font-size: 0;
   display: flex;
@@ -21,9 +21,12 @@
   width: 60px;
   margin: 0 auto;
 }
-
+.slider-nav.reviews__nav {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
 .slider-nav__btn {
-  position: relative;
   display: inline-block;
   width: 6px;
   height: 6px;
@@ -40,24 +43,11 @@
 .slider-nav__btn:active {
   background: #e9ebec;
 }
-/*.slider-nav__btn::after {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: 80px;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-  border: 1px solid #000000;
-
-}*/
-
-
-
-/*.reviews-item--active {
-  display: block;
-}*/
-
+.reviews-item--active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .reviews__toggle {
   display: none;
 }
@@ -67,13 +57,19 @@
 #reviews-radio-3:checked ~ .reviews-item:nth-of-type(3) {
   display: block;
 }
-
-#reviews-radio-1:checked ~ .slider-nav label[for="reviews-radio-1"],
-#reviews-radio-2:checked ~ .slider-nav label[for="reviews-radio-2"],
-#reviews-radio-3:checked ~ .slider-nav label[for="reviews-radio-3"] {
+#reviews-radio-1:checked ~ .slider-nav.reviews__nav label[for="reviews-radio-1"],
+#reviews-radio-2:checked ~ .slider-nav.reviews__nav label[for="reviews-radio-2"],
+#reviews-radio-3:checked ~ .slider-nav.reviews__nav label[for="reviews-radio-3"] {
   border: 3px solid #283645;
   background: #ffffff;
 }
+
+@media #{$tablet-width} {
+  .slider-nav.reviews__nav {
+    left: 45%;
+  }
+}
+
 @media #{$desktop-width} {
   .reviews__wrapper {
     position: relative;
@@ -89,13 +85,17 @@
   }
   .reviews__toggle {
     display: block;
-    //border: none;
-    //background: none;
   }
   .reviews__toggle .arrow {
-    fill: #caced1;
+    fill: #bec2c7;
     position: absolute;
-    top: 50%;
+    top: 43%;
+  }
+  .reviews__toggle .arrow:hover {
+    fill: #7e868f;
+  }
+  .reviews__toggle .arrow:active {
+    fill: rgba(126, 134, 143, .3);
   }
   .reviews__toggle .arrow-right {
     right: 0;

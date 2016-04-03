@@ -20,7 +20,7 @@
   line-height: 30px;
 }
 .intro__text.intro__text--photo {
-  padding: 47px 34px;
+  padding: 47px 44px;
 }
 .intro__text.intro__text--small {
   padding: 28px 20px;
@@ -32,6 +32,7 @@
 .intro__text.intro__text--promo {
    padding: 0;
  }
+
 @media #{$tablet-width} {
   .intro__text:first-child {
     padding-bottom: 0;
@@ -51,10 +52,20 @@
     padding: 82px 100px;
   }
   .intro__text.intro__text--photo {
-    padding: 85px 133px;
+    padding: 84px 133px;
   }
   .intro__text.intro__text--promo:nth-child(2) {
     padding: 0;
   }
+  .intro__text.intro__text--promo {
+    font-size: 18px;
+  }
 }
 
+@media #{$desktop-width} {
+  .intro__text.intro__text--photo {
+    width: 600px;
+    margin: 0 auto;
+    padding: 90px 133px;
+  }
+}
