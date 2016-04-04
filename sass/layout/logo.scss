@@ -4,15 +4,33 @@
 .logo img {
   display: block;
 }
-.logo--top img {
-  height: 25px;
-  width: 80px;
+.logo--top {
+  z-index: 2;
 }
-.logo--bottom {
-  width: 33.3333%;
+.logo--bottom svg {
+  width: 146px;
+  height: 40px;
+  display: block;
 }
-.logo--bottom img {
-  width: 150px;
-  height: 50px;
+.logo--bottom-desktop {
+  display: none;
+}
+.logo--bottom .logo--bottom-pink {
+  fill: #283645;
+}
+.logo--bottom:hover .logo--bottom-pink {
+  fill: $pink-color;
+}
+.logo--bottom:active .logo--bottom-glasses {
+  fill: rgba(210, 40, 86, .3);
+}
+.logo--bottom:active .logo--bottom-pink {
+  fill: rgba(40, 54, 69, .3);
 }
 
+@media #{$desktop-width} {
+  .logo--bottom-desktop {
+    display: block;
+  }
+
+}

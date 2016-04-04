@@ -1,19 +1,54 @@
-@media #{$tablet-width} {
-  .reviews-item__text {
+@media #{$mobile-width-only} {
+  .reviews-item__author-info {
     display: none;
   }
 }
-//сделала флекс, но теперь все слайды показываются на десктопе, а не 1. почему?
-@media #{$desktop-width} {
+.reviews-items {
+  display: flex;
+  width: 300%;
+}
+.reviews-item {
+  width: 100%;
+  margin: 0;
+}
+.reviews-item__author {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  font-weight: 700;
+  font-style: normal;
+  padding-bottom: 30px;
+}
+.reviews-item__text{
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+@media #{$tablet-width} {
+  .reviews-item__author {
+    padding-bottom: 0;
+  }
+  .reviews-item__author-info {
+    font-size: 14px;
+    line-height: 30px;
+    margin: 0;
+    padding-bottom: 40px;
+  }
   .reviews-item {
     display: flex;
-    flex-direction: column;
   }
   .reviews-item__text {
     order: -1;
-    display: block;
-    font-size: 14px;
-    line-height: 30px;
-    color: #283645;
+  }
+}
+
+@media #{$desktop-width} {
+  .reviews-item {
+    margin-left: 160px;
+    margin-right: 165px;
   }
 }
