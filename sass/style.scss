@@ -8,51 +8,51 @@ body {
   font-style: normal;
 }
 
-@import "base/normalize";
+@import "normalize";
 
-@import "utils/variables";
+@import "variables";
 
-@import "utils/mixin";
+@import "mixin";
 
-@import "layout/page-header";
+@import "page-header";
 
-@import "layout/logo";
+@import "logo";
 
-@import "layout/main-nav";
+@import "main-nav";
 
-@import "layout/promo-slogan";
+@import "promo-slogan";
 
-@import "layout/promo-stats__text";
+@import "promo-stats__text";
 
-@import "layout/intro-text";
+@import "intro-text";
 
-@import "layout/form-group";
+@import "form-group";
 
-@import "layout/download-app";
+@import "download-app";
 
-@import "layout/advantages";
+@import "advantages";
 
-@import "layout/reviews";
+@import "reviews";
 
-@import "layout/reviews-item";
+@import "reviews-item";
 
-@import "layout/users-photos";
+@import "users-photos";
 
-@import "layout/users-photos-item";
+@import "users-photos-item";
 
-@import "layout/users-photos__post";
+@import "users-photos__post";
 
-@import "layout/range-filters";
+@import "range-filters";
 
-@import "layout/price";
+@import "price";
 
-@import "layout/price__list";
+@import "price__list";
 
-@import "layout/contacts";
+@import "contacts";
 
-@import "layout/page-footer";
+@import "page-footer";
 
-@import "layout/user-personal-info";
+@import "user-personal-info";
 
-@import "layout/popups";
+@import "popups";
 
