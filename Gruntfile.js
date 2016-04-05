@@ -15,7 +15,8 @@ module.exports = function(grunt) {
             "fonts/**/*.{woff,woff2}",
             "img/**",
             "js/**",
-            "*.html"
+            "*.html",
+            "css/*.css"
           ],
           dest: "build"
         }]
@@ -119,7 +120,7 @@ module.exports = function(grunt) {
         options: {spawn: false}
       },
       style: {
-        files: ["sass/**/*.{scss,sass}"],
+        files: ["sass/**/*.scss"],
         tasks: ["sass", "postcss", "csso"],
         options: {spawn: false}
       }

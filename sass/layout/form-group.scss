@@ -119,7 +119,7 @@ input::-webkit-input-placeholder {
   .form-group.form-group--user-info {
     //margin-bottom: 15px;
     border: none;
-    order: -2;
+    order: -3;
   }
   .form-group__label.form-group__label--name {
     padding-left: 0;
@@ -278,12 +278,12 @@ input[type="radio"]:checked + label::after {
     flex-direction: column;
   }
   .form-group.form-group--app-choice {
-    order: -1;
+    order: -2;
   }
 }
 /*
 ==================================
- form-group__title--contacts
+ form-group--contacts
 ==================================
 */
 .form-group__title.form-group__title--contacts {
@@ -339,6 +339,9 @@ input[type="radio"]:checked + label::after {
   .form-group__label.form-group__label--contacts:nth-child(2) {
     padding-bottom: 0;
   }
+  .form-group.form-group--contacts {
+    order: -1;
+  }
 }
 
 @media #{$desktop-width} {
@@ -353,6 +356,7 @@ input[type="radio"]:checked + label::after {
     padding-top: 11px;
     padding-bottom: 11px;
   }
+
 }
 /*
 ==================================
