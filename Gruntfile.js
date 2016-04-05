@@ -32,7 +32,7 @@ module.exports = function(grunt) {
     sass: {
       style: {
         files: {
-          "build/css/style.css": "sass/style.scss"
+          "css/style.css": "sass/style.scss"
         }
       }
     },
@@ -123,23 +123,8 @@ module.exports = function(grunt) {
         tasks: ["sass", "postcss", "csso"],
         options: {spawn: false}
       }
-
     }
   });
 
   grunt.registerTask("serve", ["browserSync", "watch"]);
-  grunt.registerTask("symbols", ["svgmin", "svgstore"]);
-
-  grunt.registerTask("build", [
-    "clean",
-    "copy",
-    "sass",
-    "postcss",
-    "csso",
-    "symbols",
-    "imagemin"
-  ]);
 };
-
-
-

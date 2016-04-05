@@ -52,3 +52,8 @@
     margin-top: 0;
   }
 }
+@media #{$desktop-width} {
+  .download-app {
+    padding: 0 0 126px 0;
+  }
+}
