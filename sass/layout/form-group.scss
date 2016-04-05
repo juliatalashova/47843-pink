@@ -155,6 +155,7 @@ input::-webkit-input-placeholder {
   color: #283645;
   text-transform: none;
   padding-left: 70px;
+
 }
 .form-group input[type="checkbox"],
 .form-group input[type="radio"] {
@@ -241,6 +242,12 @@ input[type="checkbox"]:checked + label::after {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 24px 0;
+  }
+  .form-group__label {
+    width: 270px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 /*

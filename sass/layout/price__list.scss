@@ -6,7 +6,6 @@
     display: none;
   }
 }
-
 .price__list,
 .side__list {
   padding: 0;
@@ -49,7 +48,6 @@
 .price__item.price__item--active {
   position: relative;
   overflow: hidden;
-
 }
 .corner-ribbon {
   background-color: $pink-color;
