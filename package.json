@@ -21,6 +21,7 @@
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-watch": "0.6.1",
+    "grunt-css-mqpacker": "^2.0.0",
     "grunt-csso": "^0.8.2",
     "grunt-postcss": "0.7.2",
     "grunt-sass": "1.1.0",
