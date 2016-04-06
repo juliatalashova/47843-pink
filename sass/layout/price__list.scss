@@ -3,16 +3,25 @@
     display: none;
   }
   .price__list {
-    display: none;
+    //display: none;
   }
+}
+.price-slider__wrapper {
+  width: 300%;
+  order: -1;
+  display: flex;
 }
 .price__list,
 .side__list {
   padding: 0;
   margin: 0;
   list-style: none;
-  order: -1;
   background: #ffffff;
+  width: 100%;
+}
+.price__list {
+  display: flex;
+  flex-direction: column;
 }
 .price__item {
   border: 1px solid #e5e5e5;
@@ -76,6 +85,10 @@
 }
 
 @media #{$tablet-width} {
+  .price-slider__wrapper {
+    width: 620px;
+    margin: 0 auto;
+  }
   .price__list,
   .side__list {
     width: 155px;
