@@ -1,32 +1,40 @@
+.main-nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
 .main-nav--closed {
   display: none;
 }
 .main-nav--opened {
-  width: 100%;
-  z-index: 1;
+  display: block;
 }
 .main-nav__list {
-  padding-top: 66px;
-  margin: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   list-style: none;
+  margin: 0;
   -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  padding-top: 66px;
+  text-align: center;
   background-color: #283645;
 }
 .main-nav__item {
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000101;
 }
-
 .main-nav__link {
   display: block;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
-  color: #ffffff;
   padding: 15px 0;
 }
 .main-nav__link:hover,
@@ -60,9 +68,9 @@
   0 16px 0 0 $pink-color;
 }
 .main-nav__toggle--closed:active::before {
-   background-color: rgba(210, 40, 86, 0.3);
-   box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3),
-   0 16px 0 0 rgba(210, 40, 86, 0.3);
+  background-color: rgba(210, 40, 86, 0.3);
+  box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3),
+  0 16px 0 0 rgba(210, 40, 86, 0.3);
 }
 .main-nav__toggle--opened {
   top: 0;
@@ -85,7 +93,6 @@
 .main-nav__toggle--opened::after {
   transform: rotate(-45deg);
 }
-
 @media #{$tablet-width} {
   .main-nav__list {
     padding-top: 110px;
@@ -102,13 +109,22 @@
   }
 }
 @media #{$desktop-width} {
+  .main-nav__toggle {
+    display: none;
+  }
   .main-nav {
     display: block;
-    position: static;
-    width: 66.7%;
+    top: 35px;
+    right: 130px;
+    width: 52.5%;
+  }
+  .main-nav--closed {
+    display: none;
+    z-index: 0;
   }
   .main-nav__list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 0;
@@ -118,25 +134,16 @@
     background: transparent;
   }
   .main-nav__item {
-    display: inline-block;
-    vertical-align: top;
     border-bottom: none;
     border-top: none;
   }
   .main-nav__link {
     text-transform: none;
-    line-height: 32px;
+    line-height: 18px;
     font-weight: normal;
-    color: #ffffff;
   }
   .main-nav__toggle {
     display: none;
-  }
-  .main-nav__link {
-    line-height: 18px;
-  }
-  .main-nav__link:active {
-    opacity: .3;
   }
   .main-nav__link:active::after {
     display: none;
@@ -153,5 +160,8 @@
     right: 0;
     height: 5px;
     background: #ffffff;
+  }
+  .main-nav__link:active {
+    color: rgba(255, 255, 255, .3);
   }
 }

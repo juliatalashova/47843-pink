@@ -6,11 +6,23 @@
   font-size: 14px;
   line-height: 24px;
   margin: 0;
-  padding: 25px 18px 27px 22px;
+  padding: 23px 27px 17px 18px;
 }
+
 .users-photos-item__author {
   font-weight: 700;
   font-style: normal;
+  padding-bottom: 7px;
+}
+.users-photos-item__text {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+.users-photos-item__text--note {
+  padding-bottom: 24px;
+}
+.users-photos-item__post-time {
+  color: #82878e;
 }
 .users-photos-item__post-time,
 .users-photos-item__like {
