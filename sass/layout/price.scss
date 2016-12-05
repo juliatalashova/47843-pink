@@ -1,25 +1,27 @@
 .price {
   background: $bg-grey linear-gradient(to right bottom, #ffffff 0%, #ffffff 50%, $bg-grey 50%, $bg-grey 100%) top no-repeat;
   background-size: 100% 30px;
-}
-.price__wrapper {
-  @include container;
+  padding: 90px 20px 0 20px;
   display: flex;
   flex-direction: column;
-  padding-top: 90px;
 }
-.price__wrapper input[type="radio"] {
+/*.price__wrapper {
+  @include container;
+  display: flex;
+
+  padding-top: 90px;
+}*/
+.price input[type="radio"] {
   display: none;
 }
 .price__nav {
   padding-top: 40px;
   padding-bottom: 47px;
 }
-#price-radio-1:checked ~ .price__list:nth-child(6),
-#price-radio-2:checked ~ .price__list:nth-child(7),
-#price-radio-3:checked ~ .price__list:nth-child(8) {
-  display: block;
+#price-radio-2:checked ~ .price-slider__wrapper {
+  transform: translateX(-33%);
 }
+
 #price-radio-1:checked ~ .slider-nav label[for="price-radio-1"],
 #price-radio-2:checked ~ .slider-nav label[for="price-radio-2"],
 #price-radio-3:checked ~ .slider-nav label[for="price-radio-3"] {
